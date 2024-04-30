@@ -1,6 +1,6 @@
 # Add Docker's official GPG key:
 sudo apt-get update -y
-sudo apt get upgrade -y
+sudo apt-get upgrade -y
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
@@ -14,7 +14,7 @@ docker version
 groupadd docker
 sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
-sudo apt installl jq -y
+sudo apt-get install jq -y
 VERSION=$(curl --silent https://api.github.com/repos/docker/compose/releases/latest | jq .name -r) && \
 DESTINATION=/usr/bin/docker-compose && \
 sudo curl -sL https://github.com/docker/compose/releases/download/${VERSION}/docker-compose-$(uname -s)-$(uname -m) -o $DESTINATION && \
