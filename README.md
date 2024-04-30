@@ -1,1 +1,1 @@
-# script17
+- install docker compose and docker
